@@ -1,0 +1,67 @@
+body {
+    background-color: black;
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+/* 轮播图容器 */
+
+.zy-slide {
+    position: relative;
+    width: 750px;
+    height: 300px;
+    /* background-color: yellow; */
+    /* color: white; */
+    margin: 50px auto;
+}
+
+
+/* 按钮 */
+
+.zy-slide .pre,
+.zy-slide .next {
+    position: absolute;
+    top: 50%;
+}
+
+
+/* 上一张按钮 */
+
+.zy-slide .pre {
+    left: -80px;
+}
+
+
+/* 下一张按钮 */
+
+.zy-slide .next {
+    right: -80px;
+}
+
+.zy-slide ul {
+    width: 100%;
+    height: 100%;
+}
+
+.zy-slide ul li {
+    width: 120px;
+    height: 150px;
+    position: absolute;
+    top: 75px;
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.zy-slide ul li img {
+    width: 100%;
+    height: 100%;
+}

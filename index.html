@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>轮播图</title>
+    <link rel="stylesheet" href="css/jquery.zyslide.css">
+    <script src="libs/jquery-3.1.1.js"></script>
+    <script src="js/jquery.zyslide.js"></script>
+</head>
+
+<body>
+    <div id="box2" class="slide zy-slide">
+        <section class="pre">上一张</section>
+        <section class="next">下一张</section>
+        <ul>
+            <!-- li*7>img[src="images/$.jpg"] -->
+            <li><img src="images/1.jpg" alt=""></li>
+            <li><img src="images/2.jpg" alt=""></li>
+            <li><img src="images/3.jpg" alt=""></li>
+            <li><img src="images/4.jpg" alt=""></li>
+            <li><img src="images/5.jpg" alt=""></li>
+            <li><img src="images/6.jpg" alt=""></li>
+            <li><img src="images/7.jpg" alt=""></li>
+        </ul>
+    </div>
+    <div id="box" class="slide zy-slide">
+        <section class="pre">上一张</section>
+        <section class="next">下一张</section>
+        <ul>
+            <!-- li*7>img[src="images/$.jpg"] -->
+            <li><img src="images/1.jpg" alt=""></li>
+            <li><img src="images/2.jpg" alt=""></li>
+            <li><img src="images/3.jpg" alt=""></li>
+            <li><img src="images/4.jpg" alt=""></li>
+            <li><img src="images/5.jpg" alt=""></li>
+            <li><img src="images/6.jpg" alt=""></li>
+            <li><img src="images/7.jpg" alt=""></li>
+        </ul>
+    </div>
+    <!-- <script src="libs/jquery-3.1.1.js"></script>
+    <script src="js/index.js"></script> -->
+    <script>
+        // $(".zy-slide").ZySlide();
+        $("#box2").ZySlide();
+        $("#box").ZySlide({
+            // delay: 500,
+            speed: 2000
+        });
+        // console.log($.fn);
+        // console.log($.fn.ZySlide);
+    </script>
+</body>
+
+</html>
